@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(100, 0, 0);
+  background: linear-gradient(to top right, rgb(255, 186, 186), #ffffff);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  margin: 20px auto;
+  width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 245, 245);
+}
+
+.me img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  margin: 35px 0;
+}
+
+.me a {
+  margin-top: 25px;
+  color: rgb(175, 171, 171);
+}
+
+.me a:hover {
+  color: rgb(135, 132, 132);
+  transition: ease-in;
+}
+
+.about h3 {
+  margin-bottom: 25px;
+}
+
+.about p {
+  text-align: left;
+}
+
+.tech img {
+  height: 50px;
+  width: 50px;
+}
+
+.tech ul {
+  display: flex;
+  gap: 20px;
+}
+
+.tech h3 {
+  margin-bottom: 25px;
+}
+
+.follow i {
+  gap: 10px;
+  color: rgb(121, 3, 3);
+}
+
+.follow i:hover {
+  color: rgb(255, 0, 0);
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.follow h3 {
+  margin-bottom: 20px;
+}
+
+.follow ul {
+  display: flex;
+  font-size: 25px;
+  gap: 15px;
+  padding: 8px 8px;
+}
+
+@media (max-width: 960px) {
+  .card {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .card {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .card {
+    width: 300px;
+  }
+
+  .tech ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
